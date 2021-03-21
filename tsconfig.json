@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es7", "dom"],
+        "jsx": "react-jsx",
+        "strict": true
+    }
+}
