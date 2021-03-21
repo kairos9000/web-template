@@ -1,4 +1,4 @@
-# Template for webproject
+# Template for React with Webpack, TypeScript & SCSS
 ## Used Technologies
 - Webpack 5.27
 - React 17.0
