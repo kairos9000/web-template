@@ -5,6 +5,9 @@
 - TypeScript 4.2
 - SCSS
 - Yarn
+## Getting started
+- Clone or download repository
+- run ```yarn``` to install dependencies
 ## Scripts
 ```bash
 yarn start
