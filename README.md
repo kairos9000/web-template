@@ -9,14 +9,8 @@
 - Clone or download repository
 - run ```yarn``` to install dependencies
 ## Scripts
-```bash
-yarn start
-```
-Start local development server
-```bash
-yarn build
-```
-Build for production into /build directory
+- ```yarn start``` to start local development server
+- ```yarn build``` to build for production into /build directory
 ## Features
 - full debug support for TypeScript
 - TypeScript with enabled strict mode
