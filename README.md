@@ -4,13 +4,13 @@
 - React 17.0
 - TypeScript 4.2
 - SCSS
-- Yarn
+- NPM or Yarn
 ## Getting started
 - Clone or download repository
-- run ```yarn``` to install dependencies
+- run ```npm install``` or ```yarn``` to install dependencies
 ## Scripts
-- ```yarn start``` to start local development server
-- ```yarn build``` to build for production into /build directory
+- ```npm run start``` or ```yarn start``` to start local development server
+- ```npm run build``` or ```yarn build``` to build for production into /build directory
 ## Features
 - full debug support for TypeScript
 - TypeScript with enabled strict mode
