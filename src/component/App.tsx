@@ -15,7 +15,6 @@ export const App = (props: IProps) => {
                     <li>React 17.0 + JSX</li>
                     <li>TypeScript 4.2</li>
                     <li>SCSS</li>
-                    <li>Yarn</li>
                 </ul>
             </section>
             <section>
