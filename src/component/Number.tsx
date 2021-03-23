@@ -61,9 +61,9 @@ export class Number extends Component<IProps, IState> {
         this.animationFrameRequest = window.requestAnimationFrame(this.handleAnimationFrame);
     }
 
-    shouldComponentUpdate(nextProps: Readonly<IProps>) {
-        const { children: from } = this.props;
-        const { children: to } = nextProps;
+    componentDidUpdate(prevProps: Readonly<IProps>) {
+        const { children: from } = prevProps;
+        const { children: to } = this.props;
 
         if (from !== to) {
             const fromFormatted = this.formatValue(from);
@@ -73,8 +73,6 @@ export class Number extends Component<IProps, IState> {
                 this.setupAnimation(from, to);
             }
         }
-
-        return true;
     }
 
     setupAnimation(from: number | null, to: number | null) {
