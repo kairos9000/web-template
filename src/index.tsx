@@ -1,7 +1,7 @@
-import "./style/";
+import "./index.scss";
 import { render } from "react-dom";
-import { App } from "./component/App";
+import { App } from "./App";
 
-const reactContainer = document.getElementById("app");
+const container = document.getElementById("app");
 
-render(<App />, reactContainer);
+render(<App />, container);
