@@ -3,10 +3,11 @@ const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin"
 const ReactRefreshTypeScript = require("react-refresh-typescript");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
+/** @type {import('webpack/types').Configuration} */
 module.exports = {
     mode: "development",
     entry: "./src/index.tsx",
-    devtool: "inline-source-map",
+    devtool: "eval-source-map",
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json", ".css", ".scss"],
     },
@@ -17,6 +18,7 @@ module.exports = {
                 use: {
                     loader: "ts-loader",
                     options: {
+                        configFile: "tsconfig.dev.json",
                         transpileOnly: true,
                     },
                 },
@@ -29,6 +31,7 @@ module.exports = {
                         getCustomTransformers: () => ({
                             before: [ReactRefreshTypeScript()],
                         }),
+                        configFile: "tsconfig.dev.json",
                         transpileOnly: true,
                     },
                 },
@@ -44,7 +47,7 @@ module.exports = {
             template: "./src/index.html",
         }),
         new ReactRefreshWebpackPlugin(),
-        new ForkTsCheckerWebpackPlugin(),
+        new ForkTsCheckerWebpackPlugin({ async: false }),
     ],
     devServer: {
         open: true,

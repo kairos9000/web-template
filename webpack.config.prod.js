@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+/** @type {import('webpack/types').Configuration} */
 module.exports = {
     mode: "production",
     entry: "./src/index.tsx",
