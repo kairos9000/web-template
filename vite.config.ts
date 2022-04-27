@@ -6,5 +6,6 @@ export default defineConfig({
     plugins: [react(), checker({ typescript: true })],
     server: {
         open: true,
+        host: true,
     },
 });
