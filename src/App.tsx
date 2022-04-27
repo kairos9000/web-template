@@ -1,3 +1,4 @@
+import { Add } from "@mui/icons-material";
 import { Button, Typography } from "@mui/material";
 import { useState } from "react";
 
@@ -7,7 +8,7 @@ export function App() {
     return (
         <>
             <Typography variant="h1">Hello World</Typography>
-            <Button variant="contained" onClick={() => setCount(count + 1)}>
+            <Button variant="contained" startIcon={<Add />} onClick={() => setCount(count + 1)}>
                 {count}
             </Button>
         </>
