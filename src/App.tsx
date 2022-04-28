@@ -12,9 +12,6 @@ export function App() {
     return (
         <>
             <Typography variant="h1">Hello World</Typography>
-            <Button variant="contained" startIcon={<Add />} onClick={handleClick}>
-                {count}
-            </Button>
         </>
     );
 }
