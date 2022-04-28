@@ -13,3 +13,4 @@
     -   `--watch` to enable watch mode
     -   `--coverage` to generate coverage report
 -   `yarn build` Build project for production into /dist folder
+-   `yarn preview` Preview production build
