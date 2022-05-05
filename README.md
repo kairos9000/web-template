@@ -1,16 +1,19 @@
 # Web-App
 
-## Installation
+## Install
 
--   Install **Node.js** and **Yarn**
--   Install and setup **Prettier** extension for VS Code
--   Run `yarn` in terminal to install dependencies
+-   Node.js
+-   Yarn
+-   Prettier extension
+-   Dependencies
 
-## Commands
+## Scripts
 
--   `yarn start` Start development environment
--   `yarn test` Run tests
--   `yarn test-ui` Run tests with UI
--   `yarn coverage` Generate coverage report into /coverage
--   `yarn build` Build project for production into /dist
--   `yarn preview` Preview production build
+| Name       | Description                             |
+| ---------- | --------------------------------------- |
+| `start`    | Start development environment           |
+| `test`     | Run tests                               |
+| `test-ui`  | Run tests in UI                         |
+| `coverage` | Generate coverage report into /coverage |
+| `build`    | Build for production into /dist         |
+| `preview`  | Preview production build                |
