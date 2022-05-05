@@ -9,8 +9,8 @@
 ## Commands
 
 -   `yarn start` Start development environment
--   `yarn test` Run all tests
-    -   `--watch` to enable watch mode
-    -   `--coverage` to generate coverage report
--   `yarn build` Build project for production into /dist folder
+-   `yarn test` Run tests
+-   `yarn test-ui` Run tests with UI
+-   `yarn coverage` Generate coverage report into /coverage
+-   `yarn build` Build project for production into /dist
 -   `yarn preview` Preview production build
