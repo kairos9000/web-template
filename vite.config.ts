@@ -11,6 +11,6 @@ export default defineConfig({
     test: {
         globals: true,
         environment: "jsdom",
-        setupFiles: "./node_modules/@testing-library/jest-dom/extend-expect",
+        setupFiles: "@testing-library/jest-dom/extend-expect",
     },
 });
